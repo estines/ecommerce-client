@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import LazyLoad from 'react-lazyload'
 import fetch from 'isomorphic-unfetch'
-import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import { Articles, Card, Image, Content } from '../components/shared components'
 
 export default class extends React.Component {
