@@ -10,6 +10,10 @@
 /build
 /dist
 /.next
+/static/assets/Banners
+/static/assets/Products
+/static/assets/Videos
+/.vscode
 
 # misc
 .DS_Store
