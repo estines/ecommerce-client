@@ -1,4 +1,12 @@
 import styled from 'styled-components'
+import InfiniteScroll from 'react-infinite-scroll-component'
+
+export const InfiniteArticles = styled(InfiniteScroll)`
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+`
 
 export const Articles = styled.div`
     display: flex;

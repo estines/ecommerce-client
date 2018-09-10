@@ -1,42 +1,56 @@
 import Layout from '../../components/Layout';
-import styled from 'styled-components'
-
-const Content = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-`
-
-const Aside = styled.div`
-    display: flex;
-    flex: 1;    
-`
-
-const Main = styled.div`
-    display: flex;
-    flex: 3;
-`
-
-const MenuList = styled.ul`
-    list-style: none;
-`
+import { Aside, Contents, Main } from '../../components/shared components'
+import Lazyload from 'react-lazyload'
+import Link from 'next/link'
+import CatagoriesSidebar from '../../components/Csidebar'
 
 export default class extends React.Component {
     static async getInitialProps(ctx) {
-        return {}
+        let beauty = "../static/assets/Banners/BANNER & PRODUCT BEAUTY-08.png"
+        let rhythm = "../static/assets/Banners/BANNER & PRODUCT RHYTHM-08.png"
+        let special = "../static/assets/Banners/BANNER & PRODUCT SPECIAL WOMAN-08.png"
+
+        return { beauty, special, rhythm }
     }
 
     render() {
+        const { beauty, special, rhythm } = this.props
         return (
             <Layout>
-                <Content>
+                <Contents>
                     <Aside>
-                        1
+                        <CatagoriesSidebar />
                     </Aside>
                     <Main>
-                        2
+                        {beauty &&
+                            <div>
+                                <Lazyload height={400}>
+                                    <Link prefetch href="/collection/product?catagory=special">
+                                        <img src={beauty} alt={beauty} width='100%' style={{ objectFit: 'scale-down' }} />
+                                    </Link>
+                                </Lazyload>
+                            </div>
+                        }
+                        {rhythm &&
+                            <div>
+                                <Lazyload height={400}>
+                                    <Link prefetch href="/collection/product?catagory=rhythm">
+                                        <img src={rhythm} alt={rhythm} width='100%' style={{ objectFit: 'scale-down' }} />
+                                    </Link>
+                                </Lazyload>
+                            </div>
+                        }
+                        {special &&
+                            <div>
+                                <Lazyload height={400}>
+                                    <Link prefetch href="/collection/product?catagory=special">
+                                        <img src={special} alt={special} width='100%' style={{ objectFit: 'scale-down' }} />
+                                    </Link>
+                                </Lazyload>
+                            </div>
+                        }
                     </Main>
-                </Content>
+                </Contents>
             </Layout>
         )
     }

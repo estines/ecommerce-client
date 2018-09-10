@@ -62,3 +62,26 @@ export const FlexBox = styled.div`
     align-items: ${props => props.align};
     flex-direction: ${props => props.direction};
 `
+
+
+export const Contents = styled.div`
+    display: flex;
+    width: 100%;
+`
+
+export const Aside = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 15px;
+    width: 200px;
+`
+
+export const Main = styled.div`
+    display: flex;
+    margin-left: 15px;
+    margin-right: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+`

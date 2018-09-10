@@ -38,6 +38,7 @@ export default class MyDocument extends Document {
                 <Head>
                     <meta charset="UTF-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
+                    <meta name="Description" content="Put your description here."></meta>
                     <title>Ecommerce Website</title>
                     <meta name="theme-color" content={pageContext.theme.palette.primary.main} />
                     {this.props.styleTags}

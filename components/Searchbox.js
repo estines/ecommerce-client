@@ -12,7 +12,6 @@ const styles = theme => ({
 
 export default withStyles(styles)(({ classes }) => (
     <div style={{ width: '100%' }}>
-        {console.log(classes)}
         <FlexBox direction="row-reverse" style={{ padding: '12px 0' }}>
             <TextField className={classes.textField} label="Search Items" />
         </FlexBox>

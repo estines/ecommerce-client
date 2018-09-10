@@ -3,19 +3,15 @@ import express from 'express'
 
 const port = parseInt(process.env.PORT, 10) || 4000
 const dev = process.env.NODE_ENV !== 'production'
-const nextApp = next({ dev })
-const handle = nextApp.getRequestHandler()
+const app = next({ dev })
+const handle = app.getRequestHandler()
 
-nextApp.prepare()
+app.prepare()
     .then(() => {
         const server = express()
 
-        /**
-         * @summary middleware that handle requst and prepare data in server side
-         */
-        server.get('/test', (req, res) => {
-            const actualPage = '/test'
-            nextApp.render(req, res, actualPage)
+        server.get('/collection/product', (req, res) => {
+            app.render(req, res, '/collection/product', req.query)
         })
 
         server.get('*', (req, res) => {

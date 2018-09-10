@@ -7,6 +7,13 @@ export const NavBlock = styled.div`
     width: auto;
 `
 
+export const NavFlexBox = styled.div`
+    display: flex;
+    margin: 0 24px;
+    white-space: nowrap;
+    width: auto;
+`
+
 
 export const NavMenu = styled.a`
     text-decoration: none;
@@ -45,5 +52,4 @@ export const NavMenu = styled.a`
         transform-origin: left top;
         transform: scale(1, 1);
     }
-
 `
