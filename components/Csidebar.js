@@ -20,13 +20,13 @@ export default () => (
         <h2 style={{ margin: 0, marginTop: 30 }}>Catagories</h2>
         <MenuList>
             <li>
-                <MenuItem prefetch href="/collection/product?catagory=beauty" >Beauty Set</MenuItem>
+                <MenuItem prefetch href="/collection/catagory?name=beauty" >Beauty Set</MenuItem>
             </li>
             <li>
-                <MenuItem prefetch href="/collection/product?catagory=rhythm" >Rhythm Set</MenuItem>
+                <MenuItem prefetch href="/collection/catagory?name=rhythm" >Rhythm Set</MenuItem>
             </li>
             <li>
-                <MenuItem prefetch href="/collection/product?catagory=special">Special Set</MenuItem>
+                <MenuItem prefetch href="/collection/catagory?name=special">Special Set</MenuItem>
             </li>
         </MenuList>
     </React.Fragment>

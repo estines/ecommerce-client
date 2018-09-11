@@ -59,8 +59,10 @@ export const Grid = styled.div`
 
 export const FlexBox = styled.div`
     display: flex;
+    justify-content: ${props=>props.justify}
     align-items: ${props => props.align};
     flex-direction: ${props => props.direction};
+    width: ${props => props.width}
 `
 
 

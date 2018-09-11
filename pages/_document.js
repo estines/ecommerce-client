@@ -3,7 +3,7 @@ import { ServerStyleSheet } from 'styled-components'
 import flush from 'styled-jsx/server'
 
 export default class MyDocument extends Document {
-    static getInitialProps({ renderPage }) {
+    static getInitialProps({ query, renderPage }) {
         // styled components serverside
         let pageContext
         const sheet = new ServerStyleSheet()
@@ -41,6 +41,7 @@ export default class MyDocument extends Document {
                     <meta name="Description" content="Put your description here."></meta>
                     <title>Ecommerce Website</title>
                     <meta name="theme-color" content={pageContext.theme.palette.primary.main} />
+                    <link rel="stylesheet" href="https://video-react.github.io/assets/video-react.css" />
                     {this.props.styleTags}
                 </Head>
                 <body>

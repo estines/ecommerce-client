@@ -18,6 +18,11 @@ export default () => (
                 <NavMenu>COLLECTION</NavMenu>
             </NavBlock>
         </Link>
+        <Link prefetch href="/videos">
+            <NavBlock>
+                <NavMenu>Videos</NavMenu>
+            </NavBlock>
+        </Link>
         {/* <Link prefetch href="/jewelry">
             <NavBlock>
                 <NavMenu>JEWELRY</NavMenu>

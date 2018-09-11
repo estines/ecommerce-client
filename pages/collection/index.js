@@ -25,7 +25,7 @@ export default class extends React.Component {
                         {beauty &&
                             <div>
                                 <Lazyload height={400}>
-                                    <Link prefetch href="/collection/product?catagory=special">
+                                    <Link prefetch href="/collection/catagory?name=special">
                                         <img src={beauty} alt={beauty} width='100%' style={{ objectFit: 'scale-down' }} />
                                     </Link>
                                 </Lazyload>
@@ -34,7 +34,7 @@ export default class extends React.Component {
                         {rhythm &&
                             <div>
                                 <Lazyload height={400}>
-                                    <Link prefetch href="/collection/product?catagory=rhythm">
+                                    <Link prefetch href="/collection/catagory?name=rhythm">
                                         <img src={rhythm} alt={rhythm} width='100%' style={{ objectFit: 'scale-down' }} />
                                     </Link>
                                 </Lazyload>
@@ -43,7 +43,7 @@ export default class extends React.Component {
                         {special &&
                             <div>
                                 <Lazyload height={400}>
-                                    <Link prefetch href="/collection/product?catagory=special">
+                                    <Link prefetch href="/collection/catagory?name=special">
                                         <img src={special} alt={special} width='100%' style={{ objectFit: 'scale-down' }} />
                                     </Link>
                                 </Lazyload>
