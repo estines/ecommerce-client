@@ -85,5 +85,6 @@ export const Main = styled.div`
     margin-left: 15px;
     margin-right: 30px;
     width: 100%;
+    flex-direction: ${props => props.direction};
     flex-wrap: wrap;
 `

@@ -43,6 +43,7 @@ export default class MyDocument extends Document {
                     <meta name="theme-color" content={pageContext.theme.palette.primary.main} />
                     <link rel="stylesheet" href="https://video-react.github.io/assets/video-react.css" />
                     {this.props.styleTags}
+                    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
                 </Head>
                 <body>
                     <Main />
