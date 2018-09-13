@@ -23,30 +23,10 @@ export default () => (
                 <NavMenu>Videos</NavMenu>
             </NavBlock>
         </Link>
-        {/* <Link prefetch href="/jewelry">
+        <Link prefetch href="/payments">
             <NavBlock>
-                <NavMenu>JEWELRY</NavMenu>
+                <NavMenu>Payments</NavMenu>
             </NavBlock>
         </Link>
-        <Link prefetch href="/forevermark">
-            <NavBlock>
-                <NavMenu>FOREVERMARK</NavMenu>
-            </NavBlock>
-        </Link>
-        <Link prefetch href="/theworldofjubilee">
-            <NavBlock>
-                <NavMenu>THE WORLD OF JUBILEE</NavMenu>
-            </NavBlock>
-        </Link>
-        <Link prefetch href="/diamonexpert">
-            <NavBlock>
-                <NavMenu>JUBILEE DIAMOND EXPERT</NavMenu>
-            </NavBlock>
-        </Link>
-        <Link prefetch href="/promotion">
-            <NavBlock>
-                <NavMenu>PROMOTION</NavMenu>
-            </NavBlock>
-        </Link> */}
     </React.Fragment>
 )

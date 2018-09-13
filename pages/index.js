@@ -37,29 +37,21 @@ export default class extends React.Component {
                         <div key={`beauty-${index}`} style={{ width: '100%' }}>
                             {index % 2 === 0 ?
                                 <Grid>
-                                    <Lazyload height={100}>
-                                        <ImageBox position='left'>
-                                            <img src={data.path} alt={data.name} width='100%' />
-                                        </ImageBox>
-                                    </Lazyload>
-                                    <Lazyload height={100}>
-                                        <TextBox position='right'>
-                                            <h1 style={{ margin: 0, padding: 0 }}>{data.name}</h1>
-                                        </TextBox>
-                                    </Lazyload>
+                                    <ImageBox position='left'>
+                                        <img src={data.path} alt={data.name} width='100%' />
+                                    </ImageBox>
+                                    <TextBox position='right'>
+                                        <h1 style={{ margin: 0, padding: 0 }}>{data.name}</h1>
+                                    </TextBox>
                                 </Grid>
                                 :
                                 <Grid>
-                                    <Lazyload height={100}>
-                                        <TextBox position='left'>
-                                            <h1 style={{ margin: 0, padding: 0 }}>{data.name}</h1>
-                                        </TextBox>
-                                    </Lazyload>
-                                    <Lazyload height={100}>
-                                        <ImageBox position='right'>
-                                            <img src={data.path} alt={data.name} width='100%' />
-                                        </ImageBox>
-                                    </Lazyload>
+                                    <TextBox position='left'>
+                                        <h1 style={{ margin: 0, padding: 0 }}>{data.name}</h1>
+                                    </TextBox>
+                                    <ImageBox position='right'>
+                                        <img src={data.path} alt={data.name} width='100%' />
+                                    </ImageBox>
                                 </Grid>
                             }
                         </div>
@@ -70,29 +62,21 @@ export default class extends React.Component {
                         <div key={`rhythm-${index}`} style={{ width: '100%' }}>
                             {index % 2 === 0 ?
                                 <Grid>
-                                    <Lazyload height={100}>
-                                        <ImageBox position='left'>
-                                            <img src={data.path} alt={data.name} width='100%' />
-                                        </ImageBox>
-                                    </Lazyload>
-                                    <Lazyload height={100}>
-                                        <TextBox position='right'>
-                                            <h1 style={{ margin: 0, padding: 0 }}>{data.name}</h1>
-                                        </TextBox>
-                                    </Lazyload>
+                                    <ImageBox position='left'>
+                                        <img src={data.path} alt={data.name} width='100%' />
+                                    </ImageBox>
+                                    <TextBox position='right'>
+                                        <h1 style={{ margin: 0, padding: 0 }}>{data.name}</h1>
+                                    </TextBox>
                                 </Grid>
                                 :
                                 <Grid>
-                                    <Lazyload height={100}>
-                                        <TextBox position='left'>
-                                            <h1 style={{ margin: 0, padding: 0 }}>{data.name}</h1>
-                                        </TextBox>
-                                    </Lazyload>
-                                    <Lazyload height={100}>
-                                        <ImageBox position='right'>
-                                            <img src={data.path} alt={data.name} width='100%' />
-                                        </ImageBox>
-                                    </Lazyload>
+                                    <TextBox position='left'>
+                                        <h1 style={{ margin: 0, padding: 0 }}>{data.name}</h1>
+                                    </TextBox>
+                                    <ImageBox position='right'>
+                                        <img src={data.path} alt={data.name} width='100%' />
+                                    </ImageBox>
                                 </Grid>
                             }
                         </div>
@@ -103,29 +87,21 @@ export default class extends React.Component {
                         <div key={`special-${index}`} style={{ width: '100%' }}>
                             {index % 2 === 0 ?
                                 <Grid>
-                                    <Lazyload height={100}>
-                                        <ImageBox position='left'>
-                                            <img src={data.path} alt={data.name} width='100%' />
-                                        </ImageBox>
-                                    </Lazyload>
-                                    <Lazyload height={100}>
-                                        <TextBox position='right'>
-                                            <h1 style={{ margin: 0, padding: 0 }}>{data.name}</h1>
-                                        </TextBox>
-                                    </Lazyload>
+                                    <ImageBox position='left'>
+                                        <img src={data.path} alt={data.name} width='100%' />
+                                    </ImageBox>
+                                    <TextBox position='right'>
+                                        <h1 style={{ margin: 0, padding: 0 }}>{data.name}</h1>
+                                    </TextBox>
                                 </Grid>
                                 :
                                 <Grid>
-                                    <Lazyload height={100}>
-                                        <TextBox position='left'>
-                                            <h1 style={{ margin: 0, padding: 0 }}>{data.name}</h1>
-                                        </TextBox>
-                                    </Lazyload>
-                                    <Lazyload height={100}>
-                                        <ImageBox position='right'>
-                                            <img src={data.path} alt={data.name} width='100%' />
-                                        </ImageBox>
-                                    </Lazyload>
+                                    <TextBox position='left'>
+                                        <h1 style={{ margin: 0, padding: 0 }}>{data.name}</h1>
+                                    </TextBox>
+                                    <ImageBox position='right'>
+                                        <img src={data.path} alt={data.name} width='100%' />
+                                    </ImageBox>
                                 </Grid>
                             }
                         </div>

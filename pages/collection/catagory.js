@@ -58,9 +58,7 @@ export default class Product extends React.Component {
                                             <div>
                                                 <h4>{item.name}</h4>
                                             </div>
-                                            <Lazyload height={50}>
-                                                <img src={item.path} alt={item.name} width="100%" style={{ cursor: 'pointer' }} onClick={() => this.onClickHandler(item)} />
-                                            </Lazyload>
+                                            <img src={item.path} alt={item.name} width="100%" style={{ cursor: 'pointer' }} onClick={() => this.onClickHandler(item)} />
                                         </ImageBox>
                                     )
                                 }) : null

@@ -19,7 +19,7 @@ export const NavMenu = styled.a`
     text-decoration: none;
     position: relative;
     display: block;
-    padding: 16px 0;
+    padding: ${props => props.padding || '16px 0'};
     letter-spacing: 1px;
     font-size: 12px;
     line-height: 16px;
@@ -33,7 +33,7 @@ export const NavMenu = styled.a`
         content: '';
         display: block;
         position: absolute;
-        bottom: 10px;
+        bottom: ${props => props.underline || '10px'};
         left: 0;
         height: 1px;
         width: 100%;
